@@ -29,9 +29,9 @@ authors = ["Jeff S <jeffreesun@protonmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.9.1"
 translate = "^3.6.1"
-embit = { path = "./vendor/embit/", develop = true }
-ur = { path = "./vendor/foundation-ur-py/", develop = true }
-urtypes = { path = "./vendor/urtypes/", develop = true }
+embit = { git = "https://github.com/diybitcoinhardware/embit.git", rev = "84cce66", develop = true }
+ur = { git = "https://github.com/selfcustody/foundation-ur-py.git", rev = "8308a4a", develop = true }
+urtypes = { git = "https://github.com/selfcustody/urtypes.git", rev = "9b84f87",  develop = true }
 
 # Docs site dependencies. Optional extras
 mkdocs = "^1.6.0"
