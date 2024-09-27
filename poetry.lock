@@ -298,14 +298,16 @@ description = "A minimal bitcoin library for MicroPython and Python3 with a focu
 optional = false
 python-versions = "*"
 files = []
-develop = true
+develop = false
 
 [package.extras]
 dev = ["black", "mkdocs", "mkdocs-material", "mkdocstrings[python]", "mypy", "pre-commit", "pytest", "pytest-cov", "requests"]
 
 [package.source]
-type = "directory"
-url = "vendor/embit"
+type = "git"
+url = "https://github.com/diybitcoinhardware/embit.git"
+reference = "HEAD"
+resolved_reference = "9d597749d6dfae19375836cf92d649012fc0298c"
 
 [[package]]
 name = "exceptiongroup"
@@ -1607,8 +1609,10 @@ files = []
 develop = true
 
 [package.source]
-type = "directory"
-url = "vendor/foundation-ur-py"
+type = "git"
+url = "https://github.com/selfcustody/foundation-ur-py.git"
+reference = "8308a4a"
+resolved_reference = "8308a4a6399cc361a3caaef92f0924ddc0d7e102"
 
 [[package]]
 name = "urllib3"
@@ -1637,8 +1641,10 @@ files = []
 develop = true
 
 [package.source]
-type = "directory"
-url = "vendor/urtypes"
+type = "git"
+url = "https://github.com/selfcustody/urtypes.git"
+reference = "9b84f87"
+resolved_reference = "9b84f87c2b127baea0d665ddcbe4f677ee4f45be"
 
 [[package]]
 name = "watchdog"
@@ -1704,4 +1710,4 @@ simulator = ["Pillow", "numpy", "opencv-python", "pygame", "pyzbar"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9.1"
-content-hash = "df67b4203afaa03c5fb92e9dad152cc9671a5a6159205d25a82a4b1b2ac62629"
+content-hash = "c0e23dd2460a8755e6893fd079f3ade4350fb2919274782f882efef7e40b7ec4"
